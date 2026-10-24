@@ -1,0 +1,203 @@
+{
+  "seq": {
+    "user": 3,
+    "account": 5,
+    "transaction": 7,
+    "charge": 1,
+    "credential": 1
+  },
+  "users": [
+    {
+      "id": 1,
+      "name": "noah solomon",
+      "email": "noahsolomon467@gmail.com",
+      "password_hash": "pbkdf2:sha256:1000000$Nw2h5GulRi1xfwk1$77b4f956c0ef86fbf2204dac411fbda8389d0f466aaa6395d977a7f9fc883ef9",
+      "created_at": "2026-10-22T11:51:53Z"
+    },
+    {
+      "id": 2,
+      "name": "noah solomon",
+      "email": "noah@gmail.com",
+      "password_hash": "pbkdf2:sha256:1000000$vs6jrAQENLbLDE8s$1482def829da61da30bb22fcc5a60ddf54468c0f7ca863d80ded4f6089da3993",
+      "created_at": "2026-10-22T12:33:26Z"
+    },
+    {
+      "id": 3,
+      "name": "Test Test",
+      "email": "tester@gmail.com",
+      "password_hash": "pbkdf2:sha256:1000000$OBdNX3ymCdQQmiWx$e818c78ce4aa372aa9f9f4ff9c2b4e073925c01c6bb2c811fe0722fa31a7e54a",
+      "created_at": "2026-10-24T08:18:04Z",
+      "fp_handle": "NNkV3oTExgvVAOhXG81O1coaz5VLEOmQHs1P9zjn0FE",
+      "merchant": {
+        "name": "Test",
+        "account_id": 3,
+        "items": [
+          {
+            "id": 1,
+            "name": "Water",
+            "price_cents": 5500
+          },
+          {
+            "id": 2,
+            "name": "Smoothie",
+            "price_cents": 15000
+          },
+          {
+            "id": 3,
+            "name": "Soft Dirnk",
+            "price_cents": 7000
+          }
+        ],
+        "next_item_id": 4
+      }
+    }
+  ],
+  "accounts": [
+    {
+      "id": 1,
+      "user_id": 1,
+      "type": "checking",
+      "number": "NX8909477717",
+      "balance_cents": 0,
+      "created_at": "2026-10-22T11:51:53Z"
+    },
+    {
+      "id": 2,
+      "user_id": 2,
+      "type": "checking",
+      "number": "NX8793525180",
+      "balance_cents": 0,
+      "created_at": "2026-10-22T12:33:26Z"
+    },
+    {
+      "id": 3,
+      "user_id": 3,
+      "type": "checking",
+      "number": "NX5116613882",
+      "balance_cents": 1075355,
+      "created_at": "2026-10-24T08:18:04Z"
+    },
+    {
+      "id": 4,
+      "user_id": 3,
+      "type": "savings",
+      "number": "NX4349536052",
+      "balance_cents": 573860,
+      "created_at": "2026-10-24T08:23:34Z"
+    },
+    {
+      "id": 5,
+      "user_id": 3,
+      "type": "checking",
+      "number": "NX9407921808",
+      "balance_cents": 6000,
+      "created_at": "2026-10-24T08:23:40Z"
+    }
+  ],
+  "transactions": [
+    {
+      "id": 1,
+      "account_id": 3,
+      "kind": "deposit",
+      "amount_cents": 1000000,
+      "balance_after_cents": 1000000,
+      "counterparty": null,
+      "note": null,
+      "created_at": "2026-10-24T08:22:47Z"
+    },
+    {
+      "id": 2,
+      "account_id": 3,
+      "kind": "deposit",
+      "amount_cents": 5000,
+      "balance_after_cents": 1005000,
+      "counterparty": null,
+      "note": null,
+      "created_at": "2026-10-24T08:22:53Z"
+    },
+    {
+      "id": 3,
+      "account_id": 3,
+      "kind": "deposit",
+      "amount_cents": 70000,
+      "balance_after_cents": 1075000,
+      "counterparty": null,
+      "note": null,
+      "created_at": "2026-10-24T08:22:57Z"
+    },
+    {
+      "id": 4,
+      "account_id": 3,
+      "kind": "deposit",
+      "amount_cents": 355,
+      "balance_after_cents": 1075355,
+      "counterparty": null,
+      "note": null,
+      "created_at": "2026-10-24T08:23:09Z"
+    },
+    {
+      "id": 5,
+      "account_id": 4,
+      "kind": "deposit",
+      "amount_cents": 570000,
+      "balance_after_cents": 570000,
+      "counterparty": null,
+      "note": null,
+      "created_at": "2026-10-24T08:23:56Z"
+    },
+    {
+      "id": 6,
+      "account_id": 4,
+      "kind": "deposit",
+      "amount_cents": 3860,
+      "balance_after_cents": 573860,
+      "counterparty": null,
+      "note": null,
+      "created_at": "2026-10-24T08:24:05Z"
+    },
+    {
+      "id": 7,
+      "account_id": 5,
+      "kind": "deposit",
+      "amount_cents": 6000,
+      "balance_after_cents": 6000,
+      "counterparty": null,
+      "note": null,
+      "created_at": "2026-10-24T08:24:31Z"
+    }
+  ],
+  "sessions": {
+    "b0c9ce857116e2f86270dd82bd3a74be397da334b1a2850473b1ae3bdf103bfc": {
+      "user_id": 3,
+      "expires_at": "2026-10-24T16:18:05Z"
+    }
+  },
+  "charges": [
+    {
+      "id": 1,
+      "merchant_user_id": 3,
+      "account_id": 3,
+      "amount_cents": 27500,
+      "label": "1\u00d7 Water, 1\u00d7 Smoothie, 1\u00d7 Soft Dirnk",
+      "status": "pending",
+      "created_at": "2026-10-24T08:27:11Z",
+      "expires_at": "2026-10-24T08:32:11Z",
+      "last_error": "A business can't pay into its own account. Use a different customer account."
+    }
+  ],
+  "credentials": [
+    {
+      "id": 1,
+      "user_id": 3,
+      "label": "This device",
+      "credential_id": "YOke1-PjZCtTjG14ZMYRjMBNH0QmP0eFHzHF9V6x6rU",
+      "public_key": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE0FFGoZ20OWmhtwIhJF8R1WQ1erChQcbfR0mOSgWdCyUkU2liFh5sn481WCHb3YQgIouCU-SGFZtt6Vi3n6ghPg",
+      "sign_count": 0,
+      "transports": [
+        "internal"
+      ],
+      "created_at": "2026-10-24T08:18:21Z",
+      "last_used_at": null
+    }
+  ]
+}

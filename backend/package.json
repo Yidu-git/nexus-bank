@@ -1,0 +1,9 @@
+{
+  "name": "nexus-backend",
+  "private": true,
+  "scripts": {
+    "start": "python3 app.py",
+    "start:lan": "HOST=0.0.0.0 python3 app.py",
+    "test": "python3 test_fingerprint.py"
+  }
+}
