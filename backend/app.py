@@ -47,7 +47,7 @@ challenges = wa.ChallengeBox(ttl=120)
 app = Flask(__name__, static_folder=None)
 
 
-# ---------------------------------------------------------------- JSON store
+#  JSON store
 class Store:
     def __init__(self, path):
         self.path = path
@@ -99,7 +99,7 @@ def next_id(db, name):
     return db["seq"][name]
 
 
-# ------------------------------------------------------------------- helpers
+#  helpers
 class ApiError(Exception):
     def __init__(self, message, status=400):
         super().__init__(message)
@@ -200,7 +200,7 @@ def find_owned(db, account_id):
     raise ApiError("Account not found.", 404)
 
 
-# ---------------------------------------------------------------------- auth
+#  auth
 @app.post("/api/register")
 def register():
     data = body()
@@ -256,7 +256,7 @@ def me():
     return jsonify(g.user)
 
 
-# ------------------------------------------------------------------ accounts
+# accounts
 @app.get("/api/accounts")
 @auth_required
 def list_accounts():
@@ -288,7 +288,7 @@ def history(account_id):
     return jsonify([tx_json(t) for t in rows[:limit]])
 
 
-# --------------------------------------------------------------- money moves
+# money moves
 def apply_change(db, acct, delta_cents, kind, counterparty=None, note=None):
     new_balance = acct["balance_cents"] + delta_cents
     if new_balance < 0:
@@ -368,7 +368,7 @@ def bluetooth_pay():
     return do_transfer(data, f"Bluetooth Pay \u00b7 {device}")
 
 
-# ------------------------------------------------------- Fingerprint Pay
+# - Fingerprint Pay
 # How it works:
 #   * At sign-up the customer's Mac creates a passkey locked behind Touch ID. Only the
 #     public half reaches the server; the fingerprint never leaves the Mac's secure chip.
@@ -491,7 +491,7 @@ def fingerprint_delete(cred_id):
     return jsonify(ok=True)
 
 
-# -------------------------------------------------------------- merchant
+# merchant
 def merchant_json(m, user):
     return {"enabled": True, "name": m["name"], "account_id": m["account_id"],
             "items": [{"id": i["id"], "name": i["name"], "price": i["price_cents"] / 100}
@@ -702,7 +702,7 @@ def pay_verify():
     return jsonify(charge=result)
 
 
-# ------------------------------------------------------------------ frontend
+# frontend
 @app.get("/", defaults={"path": ""})
 @app.get("/<path:path>")
 def spa(path):
