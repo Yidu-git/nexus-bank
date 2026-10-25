@@ -4,9 +4,13 @@ A small full-stack banking app.
 
 - **Frontend**: React (Vite), in `frontend/`
 - **Backend**: Python + Flask JSON API, in `backend/app.py`
-- **Database**: a JSON file, `backend/data/nexus.json` (created on first run)
+- **Database**: a JSON file, `backend/data/nexus.json` (If the file does not exist, it will be created on first run. Test data is included.)
 
-## Run (production style, one server)
+# Video
+
+(Video)[Video.mp4]
+
+## Startup production(one server)
 
 ```bash
 cd nexus/frontend
@@ -20,7 +24,7 @@ python app.py
 
 Open **http://localhost:5000** (not 127.0.0.1: browsers only allow fingerprint prompts on `localhost` or https), choose **Open account**, and sign up.
 
-## Run (development, hot reload)
+## DevStart (development)
 
 Terminal 1: `cd backend && python app.py`
 Terminal 2: `cd frontend && npm run dev` and open the Vite URL (it proxies `/api` to Flask).
