@@ -1,9 +1,11 @@
 # Note
 The backend was reformatted with AI to get rid of divergence between the front end and backend and to make minor security adjustments(A bit ironic but the point of this project is a proof of concept). Some dev tools (such as `fingerprint_test.py` and `webauth.py`) have also been updated with AI to better resemble production level code. Old dev tools may not be included or permanently removed/deprecated.
 
+If you have attended the 2025/2026 INSA weekend training, you should know that werkzeug can have certain vulnerabilities leading to lateral access, wanna try it out?
+
 # General discription
 
-This repository consists of a simple backend so don't expect this to replace real banks any time soon. Some features are missing so you can deposit as much money as you want but this app is mostly to implement the WebAuth feature. We would much appreciate feedback on the security of the backend. Please notify us (Either me(@Yidu-git) or Noah(@Noah2011-sol) ) of any WebAuth vulnerabilities you find.
+This repository consists of a simple backend (flask with + werkzeug sec) so don't expect this to replace real banks any time soon. Some features are missing so you can deposit as much money as you want but this app is mostly to implement the WebAuth feature. We would much appreciate feedback on the security of the backend. Please notify us (Either me(@Yidu-git) or Noah(@Noah2011-sol) ) of any WebAuth vulnerabilities you find.
 
 ## Encryption
 Thanks to some feed back from the team, we've acknowledged that JSON web tokens are an insecure way of handling sessions. While it is simpler to implement, its advantages are small. We've instead implemented a session id system where multiple devices can have separate session IDs and access the site at any time under the time limit set by the variable `SESSION_HOURS` in `app.py`.
