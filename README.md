@@ -6,6 +6,8 @@ A small full-stack banking app.
 - **Backend**: Python + Flask JSON API, in `backend/app.py`
 - **Database**: a JSON file, `backend/data/nexus.json` (If the file does not exist, it will be created on first run. Test data is included.)
 
+# NOTE : If you are planning on forking this repository, add a `.gitignore ` file.
+
 # Video
 
 (Video)[Video.mp4]

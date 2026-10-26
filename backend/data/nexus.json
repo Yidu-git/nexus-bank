@@ -167,13 +167,13 @@
     }
   ],
   "sessions": {
-    "b0c9ce857116e2f86270dd82bd3a74be397da334b1a2850473b1ae3bdf103bfc": {
+    "6541c1dd77b69050447a115c7c433b10f9789abb9d5707c662be46dff4de6ff4": {
       "user_id": 3,
-      "expires_at": "2026-10-24T16:18:05Z"
+      "expires_at": "2026-10-26T22:54:06Z"
     },
-    "2ddee33f0ec5bb7f69f3aa312fd99ad881ed9877dff86a73f983caf12549e6ee": {
+    "bbaabf9beb7d8aeb56e668d926f0aa8c7805aea91f637780374397c9db37f9d6": {
       "user_id": 3,
-      "expires_at": "2026-10-24T17:57:04Z"
+      "expires_at": "2026-10-26T22:54:46Z"
     }
   },
   "charges": [
