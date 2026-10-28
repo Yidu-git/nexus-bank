@@ -1,0 +1,25 @@
+# **Endpoints**
+**POST** - `/api/register`
+**POST** - `/api/login`
+**POST** - `/api/logout`
+**GET** - `/api/me`
+**GET** - `/api/accounts`
+**POST** - `/api/accounts`
+**GET** - `/api/accounts`
+**POST** - `/api/deposit`
+**POST** - `/api/withdraw`
+**POST** - `/api/transfer`
+**POST** - `/api/bluetooth-pay`
+**GET** - `/api/fingerprint`
+**PUT** - `/api/fingerprint/settings`
+**POST** - `/api/fingerprint/register`
+**POST** - `/api/fingerprint/register`
+**DELETE** - `/api/fingerprint/credentials`
+**GET** - `/api/merchant`
+**PUT** - `/api/merchant`
+**POST** - `/api/merchant/charges`
+**GET** - `/api/merchant/charges`
+**POST** - `/api/merchant/charges`
+**GET** - `/api/merchant/terminal`
+**POST** - `/api/pay/fingerprint`
+**POST** - `/api/pay/fingerprint`

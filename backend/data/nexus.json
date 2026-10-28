@@ -167,13 +167,9 @@
     }
   ],
   "sessions": {
-    "6541c1dd77b69050447a115c7c433b10f9789abb9d5707c662be46dff4de6ff4": {
+    "ffe302cdbf3c2748aed9f3037b912308746d14375394b6094363cbddd1099490": {
       "user_id": 3,
-      "expires_at": "2026-10-26T22:54:06Z"
-    },
-    "bbaabf9beb7d8aeb56e668d926f0aa8c7805aea91f637780374397c9db37f9d6": {
-      "user_id": 3,
-      "expires_at": "2026-10-26T22:54:46Z"
+      "expires_at": "2026-10-27T23:28:26Z"
     }
   },
   "charges": [
